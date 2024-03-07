@@ -1,0 +1,53 @@
+/* header Section  */
+
+.header_section {
+  background-color:purple;
+  color:aliceblue;
+  padding: 15px;
+}
+.header_section .container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header_section ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+.header_section ul li {
+  padding: 6px 8px;
+
+}
+
+.header_section ul li:hover {
+  background-color:plum;
+  cursor: pointer;
+}
+
+.header_section .dropdown{
+  background-color:purple;
+  display: none;
+  padding: 10px;
+  margin-left: -20px;
+  position: absolute;
+  top:40px;
+  z-index: 1000;
+}
+.nav_elements{
+  font-size: 25px;
+}
+.nav_link{
+  position: relative;
+}
+.nav_link:hover .dropdown{
+  display: block;
+}
+.grade_link{
+  position:relative;
+}
+.grade_link:hover .dropdown{
+  display: block;
+}

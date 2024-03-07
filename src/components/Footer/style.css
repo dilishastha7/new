@@ -1,0 +1,53 @@
+/* footer section styling starts */
+.footer_section{
+  background-color:purple;
+  color:aliceblue;
+  padding: 50px 0;
+
+}
+.footer_section .container{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+row-gap: 20px;
+}
+.footer_link h4{
+  font-size: 30px;
+  padding-bottom: 0x;
+}
+.footer_section ul{
+  list-style: none;
+}
+.footer_section ul li{
+  padding: 5px 0;
+}
+.footer_section .social_icons{
+  padding-bottom: 3px;
+}
+.footer_section .social_icons ul{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap:10px;
+  padding-top: 20px;
+}
+.footer_section .social_icons li{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding:0;
+  background-color:aliceblue;
+  color:black;
+}
+.footer_section .social_icons li i{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.footer_section p{
+  width: 85;
+  margin:auto;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 3px solid aliceblue;
+  padding-top: 20px;
+}

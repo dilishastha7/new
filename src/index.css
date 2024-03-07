@@ -1,13 +1,306 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* topbar Starting */
+.top_bar {
+  background-color:rgb(255, 255, 255);
+  color: black;
+  padding: 10px 0;
+  font-size: 40px;
 }
+.top_bar .select_info{
+  display: flex;
+  justify-content: end;
+
+}
+
+.container {
+  width: 90%;
+  margin: 0px;
+}
+
+.top_bar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_bar ul {
+  list-style:none;
+  display: flex;
+  gap: 400px;
+}
+
+.top_bar i {
+  font-size: 50px;
+}
+
+/* topbar end */
+
+/* header Section  */
+
+.header_section {
+  background-color:purple;
+  color:aliceblue;
+  padding: 15px;
+}
+.header_section .container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header_section ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+.header_section ul li {
+  padding: 6px 8px;
+
+}
+
+.header_section ul li:hover {
+  background-color:plum;
+  cursor: pointer;
+}
+
+.header_section .dropdown{
+  background-color:purple;
+  display: none;
+  padding: 10px;
+  margin-left: -20px;
+  position: absolute;
+  top:40px;
+  z-index: 1000;
+}
+.nav_elements{
+  font-size: 25px;
+}
+.nav_link{
+  position: relative;
+}
+.nav_link:hover .dropdown{
+  display: block;
+}
+.grade_link{
+  position:relative;
+}
+.grade_link:hover .dropdown{
+  display: block;
+}
+
+/* header section end */
+
+/* hero section styling front */
+.hero_section{
+  background-color:none;
+  color:rgb(21, 0, 128);
+  position: relative;
+}
+.hero_section h1{
+  font-size: 50px;
+}
+.hero_section h2{
+  font-size: 25px;
+}
+.hero_section h3{
+  font-size: 15px;
+  padding: 10px;
+}
+.hero_section .overlay{
+  height: 500px;
+  width: 100%;
+  background: url("./../public/images/5-Benefits-of-Personalized-Learning.png") no-repeat;
+  background-size: cover;
+  opacity: 40%;
+  
+}
+.hero_section_content{
+  padding: 0px ;
+  top: 0;
+}
+.hero_section_content{
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.hero_section_content button{
+  border: none;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background-color:plum;
+  font-size: 17px;
+}
+
+/* hero section styling end */
+/* course highlights styling starts */
+.course_highlights{
+  position:relative;
+  top:-2px;
+
+ 
+}
+.course_highlights .container{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  justify-content:space-evenly;
+}
+
+.course_card  {
+  justify-content: space-evenly;
+  width:300px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.course_card h4 {
+  background-color:purple;
+  color:aliceblue;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+
+}
+.course_card p{
+  padding: 15px;
+
+}
+.course_card button {
+  border: none;
+  margin: 10px 15px 15px 10px;
+  padding: 5px 10px;
+  background-color:plum;
+  color:black;
+  cursor: pointer;
+}
+
+/* course ends */
+/* popular course styling starts */
+.popular_course{
+  padding: 0px;
+  margin-top: 0px;
+
+}
+.popular_course .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+}
+.head{
+  text-align: center;
+  padding:30px;
+
+}
+.head h2{
+  font-size: 40px;
+  color:rgb(0, 0, 0);
+}
+.head h2::before{
+  content:"";
+  width:50px;
+  height: 4px;
+  background-color:purple;
+  display: block;
+  margin: 20px auto;
+}
+.popular_course .course_card img{
+  width: 100%;
+  height:170px;
+}
+.popular_course .course_card h5{
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+
+}
+.popular_course .course_card p{
+  font-style: italic;
+  margin-top: -20px;
+}
+
+/* ends */
+/* mid section styling */
+.mid_section{
+  background-color: plum;
+  color:black;
+  padding:100px;
+  margin-top: 100px;
+}
+.mid_section .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mid_section .button button{
+  border:none;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor:pointer;
+  border: 1px solid #ffff;
+
+}
+.mid_section .button button:hover{
+  background-color: transparent;
+  color:#ffff;
+}
+
+/* footer section styling starts */
+.footer_section{
+  background-color:purple;
+  color:aliceblue;
+  padding: 5px 0;
+
+}
+.footer_section .container{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+row-gap: 20px;
+}
+.footer_link h4{
+  font-size: 30px;
+  padding-bottom: 0x;
+}
+.footer_section ul{
+  list-style: none;
+}
+.footer_section ul li{
+  padding: 5px 0;
+}
+.footer_section .social_icons{
+  padding-bottom: 3px;
+}
+.footer_section .social_icons ul{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap:10px;
+  padding-top: 20px;
+}
+.footer_section .social_icons li{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding:0;
+  background-color:aliceblue;
+  color:black;
+}
+.footer_section .social_icons li i{
+  margin-top: 10px;
+  font-size: 14px;
+}
+.footer_section p{
+  width: 85;
+  margin:auto;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 3px solid aliceblue;
+  padding-top: 20px;
+}
+/* footer section styling ends */
